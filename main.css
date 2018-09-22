@@ -25,14 +25,11 @@ body{
     margin:5px;
     text-align: center;
     display: inline-block;
-    transition: all 0.6s ease;
+    transition: all 0.6s ease-in-out;
     transform-style: preserve-3d;
 }
 
 
-.card:hover {
-    transform: rotateY(3deg);
-}
 .wrapper{
     
    display: block;

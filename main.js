@@ -9,7 +9,7 @@ function renderButton() {
         addBtn.attr("data-name", topics[i]);
         addBtn.text(topics[i]);
         $('.btnArea').prepend(addBtn);
-        
+
     }
     $('.btnArea').append('<p style="color:grey">Click to play/pause the Gifs!</p>');
 }
@@ -21,7 +21,7 @@ $('#addTopic-btn').click(function (event) {
     topics.push(gifpush);
     $('.btnArea').empty();
     renderButton();
-    
+
 })
 
 $(".gifArea").append('<div class="wrapper">');
@@ -55,7 +55,7 @@ function stealSomeGif() {
             gifDiv.append(newImage);
             gifDiv.append(p);
             $(".wrapper").prepend(gifDiv);
-
+            $(".card:hover").css("transform", "");
         }
     })
 }
@@ -75,3 +75,9 @@ $(document).on('click', '.newGif', function () {
     }
 })
 
+$(document).on('mouseenter', ".card", function () {
+    $(this).css("transform", "rotateY(2deg)")
+})
+$(document).on('mouseleave', ".card", function () {
+    $(this).css("transform", "rotateY(0deg)")
+})
