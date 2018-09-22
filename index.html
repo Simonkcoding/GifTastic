@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giphy API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+
+<body>
+
+    <div class="container-fluid inputArea">
+        <form id="gif-form">
+            <label for="gif-input"><p id="cpRight">Powered by Giphy</p><br><h1>What makes you happy?</h1></label><br>
+            <input type="text" id="gif-input">
+            <input id="addTopic-btn" type="submit" value="Add" class="btn btn-dark">
+        </form>
+    </div>
+    <div class="container-fluid btnArea">
+    </div>
+    <div class="container-fluid gifArea">
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
